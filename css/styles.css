@@ -1,0 +1,83 @@
+body {
+    color: #434455;
+    background-color: #E5E5E5; 
+    font-family: 'Roboto', 'Verdana', sans-serif; 
+    font-size: 16px;
+    line-height: 128%;
+}
+.logo {
+    font-size: 18px;
+    line-height: 114%;
+    font-weight: 800;
+}
+.header-link {
+    color: #2E2F42;
+    text-decoration: none;
+    font-weight: 500;
+}
+.header-link:hover,
+.header-link:focus {
+    color: #404BBF;
+    text-decoration: underline;
+}
+.contact {
+    color: #434455;
+    text-decoration: none;
+}
+.contact:hover,
+.contact:focus {
+    color: #404BBF;
+}
+.main-header {
+    color: #FFFFFF;
+    font-size: 56px;
+    line-height: 98%;
+    font-weight: 700;
+}
+.main-headlines {
+    color: #2E2F42;
+    font-size: 36px;
+    line-height: 95%;
+    font-weight: 700;
+}
+.headlines {
+    color: #2E2F42;
+    font-size: 20px;
+    line-height: 102%;
+    font-weight: 500;
+}
+.first-sekt {
+    background-color: #2E2F42;
+}
+.special-button {
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    cursor: pointer;
+}
+.special-button:hover
+.special-button:focus {
+    color: #FFFFFF;
+    background-color: #404BBF;
+}
+.buttons {
+    color: #4D5AE5; 
+    background-color: #F4F4FD;
+    font-weight: 500;
+    cursor: pointer;
+}
+.buttons:hover,
+.buttons:focus {
+    color: #4D5AE5;
+    background-color: #E7E9FC;
+}
+.last-sect {
+    background-color: #F4F4FD;
+}
+.type {
+    color: #434455;
+}
+.ende {
+    color: #FFFFFF;
+    background-color: #2E2F42;
+}
