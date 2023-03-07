@@ -30,30 +30,28 @@ ul {
 li {
     text-decoration: none;
 }
-h1 h2 h3 {
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
-}
-p {
-    margin: 0;
-    padding: 0;
-
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 }
 img {
     display: block;
 }
+.section {
+    padding: 120px 0px;
+    text-align: center;
+}
 .container {
     margin: 0 auto;
     width: 1158px;
-    padding: 120px 15px;
-    text-align: center;
+    padding: 0px 15px;
 }
-.header-container > .container {
-    display: flex;
-    padding: 0 15px;
+.top {
+    padding: 0;
     border-bottom: 1px solid var(--Accent-color);
+}
+.top-container {
+    display: flex;
 }
 .navigation {
     display: flex;
@@ -69,6 +67,7 @@ img {
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
+    color: var(--Dark-color);
 }
 .ende-logo {
     margin-right: 76px;
@@ -166,12 +165,9 @@ img {
     letter-spacing: 0.02em;
     font-weight: 500;
 }
-.first-sekt {
+.first {
     background-color: var(--Dark-color);
-}
-.first-sekt > .container {
-    padding: 188px 15px;
-    text-align: center;
+    padding: 188px 0;
 }
 .special-button {
     padding: 16px 32px;
@@ -183,6 +179,9 @@ img {
     background-color: var(--Primary-Brand-Color);
     font-weight: 500;
     cursor: pointer;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-size: 16px;
 }
 .special-button:hover,
 .special-button:focus {
@@ -190,21 +189,23 @@ img {
     background-color: var(--Pressed-state-color);
 }
 .buttons {
-    padding: 16px 32px;
-    border: 0px;
+    padding: 11px 23px;
+    border: 1px solid #E7E9FC;
     border-radius: 4px;
 
     color: var(--Primary-Brand-Color);
     background-color: var(--Light-color);
     font-weight: 500;
-    cursor: pointer;
+    cursor: pointer;line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-size: 16px;
 }
 .buttons:hover,
 .buttons:focus {
-    color: #4D5AE5;
-    background-color: var(--Accent-color);
+    color: var(--background-color);
+    background-color: var(--Pressed-state-color);
 }
-.features > .container {
+.features {
     text-align: left;
 }
 .features-list {
@@ -217,8 +218,12 @@ img {
 .features-list-paragraph > .headlines {
     margin-bottom: 8px;
 }
-.What-are-we-doing > .container {
-    margin-top: 0;
+.features-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.what-are-we-doing {
+    padding-top: 0;
 }
 .picture-list {
     display: flex;
@@ -235,9 +240,13 @@ img {
     margin-top: 72px;
 }
 .last-sect-list-paragraph {
-    padding-bottom: 24px;
+    padding-bottom: 32px;
+    background-color: var(--background-color);
 }
-
+.last-sect-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
 .last-sect-list-paragraph:not(:last-child) {
     margin-right: 24px;
 }
@@ -246,19 +255,25 @@ img {
     margin-bottom: 8px;
 }
 .ende {
+    padding: 100px 0;
     color: var(--background-color);
     background-color: var(--Dark-color);
-}
-.ende .container {
     text-align: left;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .ende-text {
     margin-top: 16px;
     width: 264px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
-.filters > .container {
+.filters {
     justify-content: center;
-    padding: 96px 15px 0px;
+    padding-top: 96px;
+    padding-right: 0;
+    padding-bottom: 120px;
+    padding-left: 0;
 }
 .navigation-link-filters {
     display: flex;
@@ -267,10 +282,8 @@ img {
 .navigation-buttons:not(:last-child) {
     margin-right: 24px;
 }
-.project >.container {
-    padding-top: 72px;
-}
 .project-list {
+    padding-top: 72px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -284,7 +297,6 @@ img {
     width: 360px;
 }
 .project-list-links-border {
-    width: 360px;
     padding: 32px 16px;
     border: 1px solid var(--Accent-color);
     border-top: 0;
@@ -292,12 +304,12 @@ img {
     text-align: left;
 }
 .project-list-links-border > .headlines {
-    width: 360px;
     margin: 0;
 }
-.project-list-links-border > .type {
+.type {
     margin-top: 8px;
-    width: 360px;
 
     color: var(--Text-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
