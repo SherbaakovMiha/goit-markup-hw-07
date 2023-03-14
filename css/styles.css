@@ -99,6 +99,7 @@ img {
 .header-link {
   padding: 24px 0;
   position: relative;
+  display: block;
 
   color: var(--Dark-color);
   text-decoration: none;
@@ -106,30 +107,28 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.header-link-list:not(:last-child) {
-  margin-right: 40px;
-}
 .header-link:hover,
 .header-link:focus {
   color: var(--Pressed-state-color);
+}
+.header-link.current {
+  padding: 24px 0;
+  position: relative;
+  display: block;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--Pressed-state-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
-.header-link.studio::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--Pressed-state-color);
-  border-radius: 2px;
-  content: '';
+
+.header-link-list:not(:last-child) {
+  margin-right: 40px;
 }
-.header-link.portfolio::after {
+.header-link.current::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -231,13 +230,12 @@ img {
   letter-spacing: 0.04em;
   font-size: 16px;
 
-  transition-property: background-color, color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .special-button:hover,
 .special-button:focus {
-  color: var(--background-color);
   background-color: var(--Pressed-state-color);
 }
 .buttons {
@@ -253,7 +251,7 @@ img {
   letter-spacing: 0.04em;
   font-size: 16px;
 
-  transition-property: color, border-color, box-shadow;
+  transition-property: color, border-color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -479,15 +477,18 @@ img {
 .project-list-paragraph {
   flex-basis: calc((100% - 48px) / 3);
 }
-.project-list-links:focus,
-.project-list-links:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 .project-list-links {
   display: block;
   text-decoration: none;
   width: 360px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-list-links:focus,
+.project-list-links:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .project-list-photo-description {
   position: relative;
@@ -578,9 +579,26 @@ img {
   border-radius: 50%;
   cursor: pointer;
   background-color: var(--Accent-color);
-}
 
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--Pressed-state-color);
+  border-color: var(--Pressed-state-color);
+}
 .icon-close {
+  fill: var(--Dark-color);
   width: 8px;
   height: 8px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover .icon-close,
+.modal-button:focus .icon-close {
+  fill: var(--background-color);
 }
