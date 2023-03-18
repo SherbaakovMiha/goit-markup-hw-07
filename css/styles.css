@@ -494,14 +494,22 @@ img {
   padding: 8px 24px;
   display: flex;
   gap: 16px;
-  background: var(--Primary-Brand-Color);
   border-radius: 4px;
 
   background: var(--Primary-Brand-Color);
+  cursor: pointer;
+  align-items: center;
   color: var(--background-color);
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-size: 16px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ende-button:hover {
+  background-color: var(--Pressed-state-color);
 }
 .button-svg {
   width: 24px;
