@@ -467,7 +467,7 @@ img {
 .subscribe-container {
   margin-left: 80px;
 }
-.emeil-container {
+.ende-form-container {
   display: flex;
   gap: 24px;
 }
@@ -476,7 +476,7 @@ img {
   width: 264px;
   padding-left: 16px;
 
-  align-items: center;
+  color: var(--background-color);
   border: 1px solid var(--background-color);
   border-radius: 4px;
   background-color: var(--Dark-color);
@@ -627,7 +627,12 @@ img {
 .modal {
   position: relative;
   width: 408px;
-  height: 576px;
+  height: 584px;
+  padding: 72px 24px 24px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   background-color: var(--modal-background-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -668,7 +673,7 @@ img {
 .modal-button:focus .icon-close {
   fill: var(--background-color);
 }
-.modal-container {
+modal-container {
   padding: 72px 24px 24px 24px;
   width: 100%;
   display: flex;
@@ -685,9 +690,13 @@ img {
 }
 .form-container {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
 }
 .input-name-name {
-  display: block;
+  margin-right: auto;
   margin-bottom: 4px;
 
   color: var(--Subtle-Text-color);
@@ -696,7 +705,7 @@ img {
   letter-spacing: 0.04em;
 }
 .input-name {
-  display: block;
+  margin-right: auto;
   margin-bottom: 4px;
 
   color: var(--Subtle-Text-color);
@@ -705,33 +714,42 @@ img {
   letter-spacing: 0.01em;
 }
 .modal-input-place {
+  position: relative;
   display: flex;
   align-items: center;
-  padding-left: 19px;
   margin-bottom: 8px;
   width: 100%;
   height: 40px;
+}
+.input-place {
+  padding-left: 38px;
+  width: 100%;
+  height: 100%;
   border: 1px solid;
-  border-color: var(--Dark-color);
+  border-color: var(--Subtle-Text-color);
   border-radius: 4px;
 
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input-place:focus-within .modal-icons {
-  fill: var(--Primary-Brand-Color);
-}
-.modal-input-place:focus-within {
-  border-color: var(--Primary-Brand-Color);
-}
-.input-place {
-  border: 0;
-  width: 100%;
-  height: 100%;
-}
 .input-place:focus-visible {
   outline: 0;
+  border: 1px solid var(--Primary-Brand-Color);
+}
+.modal-icons {
+  position: absolute;
+  width: 18px;
+  height: 24px;
+  left: 16px;
+
+  fill: var(--Dark-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input-place:focus-within .modal-icons {
+  fill: var(--Primary-Brand-Color);
 }
 .modal-comment {
   margin-bottom: 16px;
@@ -740,11 +758,11 @@ img {
   width: 100%;
   height: 120px;
   border: 1px solid;
-  border-color: var(--Dark-color);
+  border-color: var(--Subtle-Text-color);
   border-radius: 4px;
   resize: none;
 
-  transition-property: outline-color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -759,13 +777,15 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comment:focus-visible {
-  outline-color: var(--Primary-Brand-Color);
+  outline: 0;
+  border: 1px solid var(--Primary-Brand-Color);
 }
 .modal-comment:focus-visible::placeholder {
   color: var(--Primary-Brand-Color);
 }
 .checkbox-place {
   display: flex;
+  margin-right: auto;
   margin-bottom: 24px;
 }
 .checkbox-container {
@@ -775,7 +795,7 @@ img {
   align-items: center;
   width: 16px;
   height: 16px;
-  border: 1px solid var(--Dark-color);
+  border: 1px solid var(--Subtle-Text-color);
   border-radius: 2px;
 
   transition-property: border-color, background-color;
@@ -800,7 +820,6 @@ img {
 }
 .checkbox-name {
   position: relative;
-  display: inline-block;
   padding-left: 24px;
 
   color: var(--Subtle-Text-color);
@@ -817,15 +836,7 @@ img {
   line-height: 1.33333;
   letter-spacing: 0.04em;
 }
-.modal-icons {
-  width: 18px;
-  height: 24px;
-  fill: var(--Dark-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .send-button {
   width: 169px;
+  margin: 0 auto;
 }

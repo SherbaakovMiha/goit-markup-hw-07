@@ -390,22 +390,20 @@
           </div>
           <div class="subscribe-container">
             <h3 class="ende-headlines">Subscribe</h3>
-            <div class="emeil-container">
-              <form class="ende-form-container">
-                <input
-                  class="emeil-input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
-              </form>
+            <form class="ende-form-container">
+              <input
+                class="emeil-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
               <button class="ende-button" type="submit">
                 Subscribe
                 <svg class="button-svg">
                   <use href="./images/icons.svg#icon-Frame"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -417,70 +415,68 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <div class="modal-container">
-          <h2 class="modal-headline">
-            Leave your contacts and we will call you back
-          </h2>
-          <form class="form-container">
-            <label class="input-name-name" for="username"> Name</label>
-            <div class="modal-input-place">
-              <svg class="modal-icons">
-                <use href="./images/icons.svg#icon-person-black"></use>
+        <h2 class="modal-headline">
+          Leave your contacts and we will call you back
+        </h2>
+        <form class="form-container">
+          <label class="input-name-name" for="username"> Name</label>
+          <div class="modal-input-place">
+            <svg class="modal-icons">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+            <input
+              class="input-place"
+              type="text"
+              name="username"
+              id="username"
+            />
+          </div>
+          <label class="input-name" for="phone-number"> Phone</label>
+          <div class="modal-input-place">
+            <svg class="modal-icons">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+            <input
+              class="input-place"
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+            />
+          </div>
+          <label class="input-name" for="email"> Email</label>
+          <div class="modal-input-place">
+            <svg class="modal-icons">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+            <input class="input-place" type="email" name="email" id="email" />
+          </div>
+          <label class="input-name" for="comments"> Comments</label>
+          <textarea
+            class="modal-comment"
+            name="comments"
+            rows="10"
+            placeholder="Text input"
+            id="comments"
+          ></textarea>
+          <div class="checkbox-place">
+            <input
+              class="input-checkbox-place"
+              type="checkbox"
+              name="acpect"
+              id="acpekt"
+            />
+            <div class="checkbox-container">
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
-              <input
-                class="input-place"
-                type="text"
-                name="username"
-                id="username"
-              />
             </div>
-            <label class="input-name" for="phone-number"> Phone</label>
-            <div class="modal-input-place">
-              <svg class="modal-icons">
-                <use href="./images/icons.svg#icon-phone-black"></use>
-              </svg>
-              <input
-                class="input-place"
-                type="tel"
-                name="phone-number"
-                id="phone-number"
-              />
-            </div>
-            <label class="input-name" for="email"> Email</label>
-            <div class="modal-input-place">
-              <svg class="modal-icons">
-                <use href="./images/icons.svg#icon-email-black"></use>
-              </svg>
-              <input class="input-place" type="email" name="email" id="email" />
-            </div>
-            <label class="input-name" for="comments"> Comments</label>
-            <textarea
-              class="modal-comment"
-              name="comments"
-              rows="10"
-              placeholder="Text input"
-              id="comments"
-            ></textarea>
-            <div class="checkbox-place">
-              <input
-                class="input-checkbox-place"
-                type="checkbox"
-                name="acpect"
-                id="acpekt"
-              />
-              <div class="checkbox-container">
-                <svg class="checkbox-icon">
-                  <use href="./images/icons.svg#icon-Vector"></use>
-                </svg>
-              </div>
-              <label class="checkbox-name" for="acpekt"
-                >I accept the terms and conditions of the
-                <a class="modal-link" href="#">Privacy Policy</a></label
-              >
-            </div>
-          </form>
+            <label class="checkbox-name" for="acpekt"
+              >I accept the terms and conditions of the
+              <a class="modal-link" href="#">Privacy Policy</a></label
+            >
+          </div>
           <button class="special-button send-button" type="submit">Send</button>
-        </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
