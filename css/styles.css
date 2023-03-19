@@ -11,6 +11,8 @@
   --Modal-overlay-color: rgba(46, 47, 66, 0.4);
   --Hero-background-color: rgba(46, 47, 66, 0.7);
   --modal-background-color: #fcfcfc;
+  --modal-border-color: rgba(33, 33, 33, 0.2);
+  --footer-inputl-border-color: rgba(255, 255, 255, 1);
 }
 *,
 *::before,
@@ -476,8 +478,8 @@ img {
   width: 264px;
   padding-left: 16px;
 
-  color: var(--background-color);
-  border: 1px solid var(--background-color);
+  color: var(--footer-inputl-border-color);
+  border: 1px solid var(--footer-inputl-border-color);
   border-radius: 4px;
   background-color: var(--Dark-color);
 }
@@ -726,7 +728,7 @@ modal-container {
   width: 100%;
   height: 100%;
   border: 1px solid;
-  border-color: var(--Subtle-Text-color);
+  border-color: var(--modal-border-color);
   border-radius: 4px;
 
   transition-property: border-color;
